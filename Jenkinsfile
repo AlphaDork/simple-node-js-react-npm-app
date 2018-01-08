@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'ubuntu'
       args '-p 3000:3000'
+      image 'alphadork/node-base'
     }
     
   }
